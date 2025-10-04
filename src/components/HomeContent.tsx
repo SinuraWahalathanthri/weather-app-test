@@ -222,7 +222,6 @@ export default function App() {
           </div>
         </div>
       </motion.nav>
-
       {/* Hero Section */}
       <section
         id="home"
@@ -303,7 +302,6 @@ export default function App() {
           </motion.button>
         </motion.div>
       </section>
-
       {/* Intro Text */}
       <div className=" w-full justify-center py-5 px-40 text-black mt-8">
         <div className="w-full justify-center">
@@ -316,7 +314,6 @@ export default function App() {
           </span>
         </div>
       </div>
-
       {/* Search Inputs */}
       <div className="w-full text-white mb-5">
         <div className="w-full justify-center text-black">
@@ -528,93 +525,140 @@ export default function App() {
           </div>
         </div>
       </div>
-
-      <footer className="bg-[#103A37] text-gray-200 relative mt-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 py-12 px-6">
-          {/* Left Section */}
+      \
+      <footer className="bg-black text-gray-300 mt-20">
+        <div className="max-w-7xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+          {/* Logo and Intro */}
           <div>
-            <motion.img
-              src={"src/assets/Weatherly.svg"}
+            <img
+              src="src/assets/Weatherly.svg"
               alt="Logo"
-              className="h-12 rounded mr-auto transition-all duration-500"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              className="h-14 mb-4"
             />
-            <p className="mt-3 text-sm text-gray-300 leading-relaxed max-w-xs">
-              Empowering people with advanced forecasts to plan their day
-              perfectly, anytime, anywhere.
+            <h3 className="font-semibold text-white mb-2">
+              National Aeronautics and Space Administration
+            </h3>
+            <p className="text-sm leading-relaxed">
+              We explore the unknown in air and space, innovate for the benefit
+              of humanity, and inspire the world through discovery.
             </p>
-            <div className="flex gap-4 mt-4">
-              <Twitter className="w-5 h-5 hover:text-white cursor-pointer" />
-              <Linkedin className="w-5 h-5 hover:text-white cursor-pointer" />
-              <Instagram className="w-5 h-5 hover:text-white cursor-pointer" />
-              <Facebook className="w-5 h-5 hover:text-white cursor-pointer" />
+            <div className="mt-3 space-x-2 text-sm">
+              <a href="#mission" className="text-blue-400 hover:underline">
+                About Our Mission
+              </a>{" "}
+              •{" "}
+              <a href="#join" className="text-blue-400 hover:underline">
+                Join Us →
+              </a>
             </div>
           </div>
 
-          {/* Middle Section */}
+          {/* Column 1 */}
           <div>
-            <h3 className="font-semibold text-white mb-3">Site Map</h3>
+            <h4 className="font-semibold text-white mb-3">Explore</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#home" className="hover:underline">
-                  Homepage
+                  Home
                 </a>
               </li>
               <li>
-                <a href="#explore" className="hover:underline">
-                  Explore
+                <a href="#news" className="hover:underline">
+                  News & Events
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:underline">
-                  About
+                <a href="#multimedia" className="hover:underline">
+                  Multimedia
+                </a>
+              </li>
+              <li>
+                <a href="#missions" className="hover:underline">
+                  Missions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 2 */}
+          <div>
+            <h4 className="font-semibold text-white mb-3">Discover</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="#space" className="hover:underline">
+                  Humans in Space
+                </a>
+              </li>
+              <li>
+                <a href="#earth" className="hover:underline">
+                  Earth
+                </a>
+              </li>
+              <li>
+                <a href="#solar" className="hover:underline">
+                  The Solar System
+                </a>
+              </li>
+              <li>
+                <a href="#universe" className="hover:underline">
+                  The Universe
+                </a>
+              </li>
+              <li>
+                <a href="#science" className="hover:underline">
+                  Science
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3 */}
+          <div>
+            <h4 className="font-semibold text-white mb-3">Connect</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="#aeronautics" className="hover:underline">
+                  Aeronautics
+                </a>
+              </li>
+              <li>
+                <a href="#technology" className="hover:underline">
+                  Technology
                 </a>
               </li>
               <li>
                 <a href="#resources" className="hover:underline">
-                  Resources & News
+                  Learning Resources
                 </a>
               </li>
               <li>
-                <a href="#careers" className="hover:underline">
-                  Careers
+                <a href="#about" className="hover:underline">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:underline">
-                  Contact Us
+                <a href="#spanish" className="hover:underline">
+                  En Español
                 </a>
               </li>
             </ul>
-          </div>
 
-          {/* Right Section */}
-          <div>
-            <h3 className="font-semibold text-white mb-3">Legal</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#privacy" className="hover:underline">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#terms" className="hover:underline">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#legal" className="hover:underline">
-                  Legal Notices
-                </a>
-              </li>
-            </ul>
+            {/* Social Media */}
+            <div className="flex gap-4 mt-4 text-gray-400">
+              <Facebook className="w-5 h-5 hover:text-white cursor-pointer" />
+              <Instagram className="w-5 h-5 hover:text-white cursor-pointer" />
+              <Twitter className="w-5 h-5 hover:text-white cursor-pointer" />
+              <Linkedin className="w-5 h-5 hover:text-white cursor-pointer" />
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="bg-[#E19D2C] text-center py-3 text-xs font-medium text-black">
-          © {new Date().getFullYear()} Ceylon XZORA. All Rights Reserved.
+        <div className="border-t border-gray-700 py-4 text-xs text-center text-gray-400">
+          Page Last Updated: <span className="font-semibold">Sep 26, 2025</span>{" "}
+          • Page Editor: <span className="font-semibold">Kalina Velev</span> •
+          Responsible Official:{" "}
+          <span className="font-semibold">Diana Logreira</span>
         </div>
       </footer>
     </div>
